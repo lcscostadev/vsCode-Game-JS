@@ -6,26 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background: gray;
-            height: 95vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #canvas {
-            background: #1D2433;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <canvas id="canvas" width="1280" height="720">
-    </canvas>
+    <header>
+        <div class="iconLinks">
+            <ion-icon name="alert-circle-outline" class="logo"></ion-icon>
+            <nav>
+                <ul class="navbar">
+                    <li>
+                        <a href="#">File</a>
+                    </li>
+                    <li>
+                        <a href="#">Edit</a>
+                    </li>
+                    <li>
+                        <a href="#">Selection</a>
+                    </li>
+                    <li>
+                        <a href="#">View</a>
+                    </li>
+                    <li>
+                        <a href="#">Go</a>
+                    </li>
+                    <li>
+                        <a href="#">Run</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terminal</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <p>vsCode Game - Visual Studio Code</p>
+        </div>
+    </header>
+    <div class="flex">
+        <aside class="first-col">
+            <div class="icons">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+        </aside>
+        <canvas id="canvas" width="1280" height="720">
+        </canvas>
+        <footer>a</footer>
+    </div>
 
     <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

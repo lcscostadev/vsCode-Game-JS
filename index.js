@@ -32,7 +32,6 @@ let enemyDamage = 10;
 // Set the enemy's speed
 let enemySpeed = 5;
 
-// Add an event listener for keydown events
 document.addEventListener('keydown', function (event) {
     // Determine which key was pressed
     let keyPressed = event.key;
@@ -67,7 +66,10 @@ document.addEventListener('keydown', function (event) {
             playerHealth = 100;
         }
     }
+});
 
+// Update the enemy's position to follow the player continuously
+setInterval(function () {
     // Update the enemy's position to follow the player, but slower
     if (playerX > enemyX) {
         enemyX += enemySpeed;
@@ -83,7 +85,7 @@ document.addEventListener('keydown', function (event) {
 
     // Redraw the canvas
     drawCanvas();
-});
+}, 50); // Set the interval time in milliseconds (in this case, 50 milliseconds)
 
 // Function to check if two rectangles have collided
 function checkCollision(x1, y1, w1, h1, x2, y2, w2, h2) {
